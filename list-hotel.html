@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en" data-x="html" data-x-toggle="html-overflow-hidden">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>DepanMata</title>
+</head>
+
+<body>
+  <div class="preloader js-preloader">
+    <div class="preloader__wrap">
+      <div class="preloader__icon">
+        <svg width="38" height="46" viewBox="0 0 38 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.548 3.5382C23.548 1.58411 25.1321 0 27.0862 0H32.9694C35.7043 0 37.9213 2.21704 37.9213 4.9519V10.8351C37.9213 12.7892 36.3372 14.3733 34.3831 14.3733C32.429 14.3733 30.8449 12.7892 30.8449 10.8351V10.7248C30.8449 8.70987 29.2115 7.0764 27.1965 7.0764H27.0862C25.1321 7.0764 23.548 5.49229 23.548 3.5382Z" fill="#3264FF"/>
+          <path d="M24.0436 24.041C21.2392 26.8522 16.6847 26.8522 13.8803 24.041C11.0759 21.2366 11.0759 16.689 13.8803 13.8777C16.6847 11.0733 21.2392 11.0733 24.0436 13.8777C26.848 16.689 26.848 21.2366 24.0436 24.041Z" fill="#FF5B00"/>
+          <path d="M27.3651 27.3685C22.721 32.0057 15.2036 32.0057 10.5595 27.3685C5.91537 22.7244 5.91537 15.2001 10.5595 10.556C11.9523 9.16323 13.6356 8.15692 15.4719 7.59512C17.3405 7.02343 18.9588 5.4923 18.9588 3.5382C18.9588 1.58411 17.3613 -0.0334073 15.4409 0.327882C11.8193 1.00923 8.35689 2.75214 5.55019 5.55363C-1.85006 12.9608 -1.85006 24.9638 5.55019 32.3709L13.2458 40.0666C16.401 43.2218 21.5166 43.2218 24.6718 40.0666L32.3675 32.3709C35.1744 29.5692 36.9147 26.1038 37.5943 22.4803C37.9545 20.5597 36.337 18.9623 34.3829 18.9623C32.4288 18.9623 30.8975 20.5806 30.3261 22.4492C29.7643 24.2863 28.758 25.9713 27.3651 27.3685Z" fill="#3264FF"/>
+        </svg>
+        </svg>
+      </div>
+    </div>
+
+    <div class="preloader__title md:text-26">DepanMata</div>
+  </div>
+
+  <main>
+    <div class="header-margin"></div>
+    <header data-add-bg="-header-5-sticky" class="header -type-5 js-header" data-x="header" data-x-toggle="is-menu-opened">
+      <div data-anim="fade" class="header__container container">
+        <div class="row justify-between items-center">
+
+          <div class="col-auto">
+            <div class="d-flex items-center">
+
+              <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
+                <img src="img/general/logo-depanmata.svg" alt="logo icon">
+                <img src="img/general/logo-depanmata.svg" alt="logo icon">
+              </a>
+
+
+              <div class="header-menu " data-x="mobile-menu" data-x-toggle="is-menu-active">
+                <div class="mobile-overlay"></div>
+
+                <div class="header-menu__content">
+                  <div class="mobile-bg js-mobile-bg"></div>
+
+                  <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+    <section class="pt-20 pb-20 bg-light-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="mainSearch -col-3-big bg-white px-10 py-10 lg:px-20 lg:pt-5 lg:pb-20 rounded-10">
+              <div class="button-grid items-center">
+
+                <div class="searchMenu-loc border-white-15 js-form-dd js-liverSearch">
+
+                  <div data-x-dd-click="searchMenu-loc">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Destination or Property Name</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <input autocomplete="off" type="search" placeholder="City, airport, region, landmark, atau property name" class="js-search js-dd-focus" />
+                    </div>
+                  </div>
+
+
+                  <div class="searchMenu-loc__field screen shadow-2 js-popup-window" data-x-dd="searchMenu-loc" data-x-dd-toggle="-is-active">
+                    <div class="bg-white px-30 py-30 sm:px-0 sm:py-15 rounded-4">
+                      <div class="y-gap-5 js-results">
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-location.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Solo</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-location.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Manahan</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-location.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Jebres</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type pt-4">
+                                <img src="img/icon/pin-location.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Banjarsari</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5">Solo, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-location.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Laweyan</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-poi.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Manahan Stadium</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-poi.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Taman Balekambang</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">CRX4+2X2 Balekambang Park, Jl. Balekambang, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-poi.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Solo Paragon Mall</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. Yosodipuro No.133, Mangkubumen, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-poi.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Pura Mangkunegaran</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. Ronggowarsito No.83, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-poi.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Stasiun Balapan</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jalan Wolter Monginsidi No.112, Kestalan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57133</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-property.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Red Chilies Hotel</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari, Surakarta</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-property.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Swiss-Belhotel Solo</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">45 Jalan Ahmad Yani, Banjarsari, Surakarta</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-property.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Red Planet Solo</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Mangkubumen, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-property.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Sans Hotel Fourth Loft Solo</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div>
+                          <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                            <div class="d-flex">
+                              <div class="icon-type">
+                                <img src="img/icon/pin-property.svg" alt="icon-location">
+                              </div>
+                              <div class="ml-10">
+                                <div class="text-15 lh-12 fw-500 js-search-option-target">Dinasty Smart Hotel</div>
+                                <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="searchMenu-date border-white-15 js-form-dd js-form-counters">
+
+                  <div data-x-dd-click="searchMenu-guests">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Guest</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <span class="js-count-adult">&lt; 50</span> Pax
+                    </div>
+                  </div>
+
+                  <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-guests" data-x-dd-toggle="-is-active">
+                    <div class="bg-white px-30 py-30 rounded-4">
+                      <div class="row y-gap-10 justify-between flex-column">
+                        <div class="col-auto px-0">
+                          <div class="text-15 fw-500">Guest Capacity</div>
+                        </div>
+
+                        <div class="col-auto guest-capacity px-0">
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked />
+                          <label class="for-checkbox-tools" for="tool-1">
+                            &lt; 50
+                          </label>
+                          
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-2" />
+                          <label class="for-checkbox-tools" for="tool-2">
+                            51-100
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-3" />
+                          <label class="for-checkbox-tools" for="tool-3">
+                            101-200
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-4" />
+                          <label class="for-checkbox-tools" for="tool-4">
+                            201-300
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-5" />
+                          <label class="for-checkbox-tools" for="tool-5">
+                            301-400
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-6" />
+                          <label class="for-checkbox-tools" for="tool-6">
+                            401-500
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-7" />
+                          <label class="for-checkbox-tools" for="tool-7">
+                            501-600
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-8" />
+                          <label class="for-checkbox-tools" for="tool-8">
+                            601-700
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-9" />
+                          <label class="for-checkbox-tools" for="tool-9">
+                            701-1000
+                          </label>
+
+                          <input class="checkbox-tools" type="radio" name="tools" id="tool-10" />
+                          <label class="for-checkbox-tools" for="tool-10">
+                            &gt; 1000
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
+
+                  <div data-x-dd-click="searchMenu-venue">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Venue Rating</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <input autocomplete="off" type="text" placeholder="Hotel, Non Hotel, 5 Star Hotel" class="js-search js-dd-focus">
+                    </div>
+                  </div>
+
+
+                  <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-venue" data-x-dd-toggle="-is-active">
+                    <div class="bg-white px-30 py-30 rounded-10">
+                      <div class="row y-gap-10 justify-between flex-column">
+                        <div class="col-auto border-bottom d-flex justify-end px-0">
+                          <button class="clear-selection">Clear Selection</button>
+                        </div>
+
+                        <div class="col-auto py-20 border-bottom">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="allVenues">
+                          <label class="for-checkbox-booking" for="allVenues">
+                            <span class="text">All Venues</span>
+                          </label>
+                          
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="nonHotel">
+                          <label class="for-checkbox-booking" for="nonHotel">							
+                            <span class="text">Non Hotel</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="star5">
+                          <label class="for-checkbox-booking" for="star5">
+                            <span class="text">5 Star</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="star4">
+                          <label class="for-checkbox-booking" for="star4">
+                            <span class="text">4 Star</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="star3">
+                          <label class="for-checkbox-booking" for="star3">
+                            <span class="text">3 Star</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="star2">
+                          <label class="for-checkbox-booking" for="star2">
+                            <span class="text">2 Star</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="star1">
+                          <label class="for-checkbox-booking" for="star1">
+                            <span class="text">1 Star</span>
+                          </label>
+                        </div>
+
+                        <div class="py-10 "><label>Selected:&nbsp;</label><span>Non Hotel, 5 Star, 4 Star, 3 Star</span></div>
+                      </div>
+                      
+                      <button class="filterSubmit button -dark py-15 px-0 xol12 rounded-10 text-white">Apply</button>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
+
+                  <div data-x-dd-click="searchMenu-type">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Room Type</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <input autocomplete="off" type="text" placeholder="Banquet, Classroom, Conference, Hollow Square Theatre" class="js-search js-dd-focus">
+                    </div>
+                  </div>
+
+
+                  <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-type" data-x-dd-toggle="-is-active">
+                    <div class="bg-white px-30 py-30 rounded-10">
+                      <div class="row y-gap-10 justify-between flex-column">
+                        <div class="col-auto border-bottom d-flex justify-end px-0">
+                          <button class="clear-selection">Clear Selection</button>
+                        </div>
+
+                        <div class="col-auto py-20 border-bottom">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="banquet">
+                          <label class="for-checkbox-booking py-10 height-60" for="banquet">
+                            <img src="img/type/banquet.png" width="44" alt="">
+                            <span class="text">Banquet</span>
+                          </label>
+                          
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="classroom">
+                          <label class="for-checkbox-booking py-10 height-60" for="classroom">
+                            <img src="img/type/classroom.png" width="40" alt="">						
+                            <span class="text">Classroom</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="conference">
+                          <label class="for-checkbox-booking py-10 height-60" for="conference">
+                            <img src="img/type/conference.png" width="80" alt="">
+                            <span class="text">Conference</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="theater">
+                          <label class="for-checkbox-booking py-10 height-60" for="theater">
+                            <img src="img/type/theater.png" width="70" alt="">
+                            <span class="text">Theater</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="hollowSquare">
+                          <label class="for-checkbox-booking py-10 height-60" for="hollowSquare">
+                            <img src="img/type/hollow.png" width="44" alt="">
+                            <span class="text">Hollow Square</span>
+                          </label>
+
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="uShape">
+                          <label class="for-checkbox-booking py-10 height-60" for="uShape">
+                            <img src="img/type/u-shape.png" width="47" alt="">
+                            <span class="text">U-Shape</span>
+                          </label>
+                        </div>
+                        <div class="py-10 "><label>Selected:&nbsp;</label><span> Banquet, Theater, U-Shape</span></div>
+                      </div>
+                      <button class="filterSubmit button -dark py-15 px-0 xol12 rounded-10 text-white">Apply</button>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="button-item">
+                  <button class="mainSearch__submit button -dark-1 py-15 px-40 col-12 rounded-4 bg-blue-1 text-white">
+                    <i class="icon-search text-20 mr-10"></i>
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-pt-md layout-pb-lg">
+      <div class="container">
+        <div class="row y-gap-30">
+          <div class="col-xl-3 col-lg-3 lg:d-none">
+            <aside class="sidebar border-white-15 p-0">
+
+              <div class="sidebar__item px-20 py-20">
+                <h5 class="text-14 fw-600 mb-10">Parking Capacity (Cars)</h5>
+                <div class="sidebar-checkbox">
+
+                  <div class="col-auto guest-capacity">
+                    <input class="checkbox-tools" type="radio" name="cars" id="50" checked />
+                    <label class="for-checkbox-tools text-14" for="50">
+                      &lt; 50
+                    </label>
+                    
+                    <input class="checkbox-tools" type="radio" name="cars" id="51-200" />
+                    <label class="for-checkbox-tools text-14" for="51-200">
+                      51-200
+                    </label>
+
+                    <input class="checkbox-tools" type="radio" name="cars" id="201-400" />
+                    <label class="for-checkbox-tools text-14" for="201-400">
+                      201-400
+                    </label>
+
+                    <input class="checkbox-tools" type="radio" name="cars" id="401-600" />
+                    <label class="for-checkbox-tools text-14 mb-5" for="401-600">
+                      401-600
+                    </label>
+
+                    <input class="checkbox-tools" type="radio" name="cars" id="601-800" />
+                    <label class="for-checkbox-tools text-14 mb-5" for="601-800">
+                      601-800
+                    </label>
+
+                    <input class="checkbox-tools" type="radio" name="cars" id="1000" />
+                    <label class="for-checkbox-tools text-14 mb-5" for="1000">
+                      &gt; 1000
+                    </label>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <hr class="border-bottom p-0 m-0">
+
+              <div class="sidebar__item py-10">
+                <div class="relative js-form-dd rounded-0">
+                  <button class="d-flex items-center width-100 justify-between py-20 px-20" data-x-dd-click="dropdownNeighbor">
+                    <h5 class="text-14 fw-600">Venue Facilities</h5>
+                    <i class="icon icon-chevron-right text-18 ml-10"></i>
+                  </button>
+    
+                  <div class="dropRating bg-white shadow-2 rounded-16" data-x-dd="dropdownNeighbor" data-x-dd-toggle="-is-active">
+                    <div class="px-20 py-20">
+                      <div class="col-auto">
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="freeInternet">
+                        <label class="for-checkbox-booking" for="freeInternet">
+                          <img src="img/icon/free-wifi.svg" width="18" alt="">
+                          <span class="text-14">Free Internet Access</span>
+                        </label>
+                        
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="fastCheckin">
+                        <label class="for-checkbox-booking" for="fastCheckin">							
+                          <img src="img/icon/checkin.svg" width="18" alt="">
+                          <span class="text-14">Fast Check-in</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="airport">
+                        <label class="for-checkbox-booking" for="airport">
+                          <img src="img/icon/airport.svg" width="18" alt="">
+                          <span class="text-14">Airport Shuttle</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="massage">
+                        <label class="for-checkbox-booking" for="massage">
+                          <img src="img/icon/spa.svg" width="18" alt="">
+                          <span class="text-14">Spa Massage</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="resto">
+                        <label class="for-checkbox-booking" for="resto">
+                          <img src="img/icon/resto.svg" width="18" alt="">
+                          <span class="text-14">Restaurant</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="parking">
+                        <label class="for-checkbox-booking" for="parking">
+                          <img src="img/icon/free-parking.svg" width="18" alt="">
+                          <span class="text-14">Free Parking</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="pets">
+                        <label class="for-checkbox-booking" for="pets">
+                          <img src="img/icon/pets.svg" width="18" alt="">
+                          <span class="text-14">Pets Allowed</span>
+                        </label>
+                        
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="swimming">
+                        <label class="for-checkbox-booking" for="swimming">
+                          <img src="img/icon/swimming.svg" width="18" alt="">
+                          <span class="text-14">Swimming Pool</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="noSmoking">
+                        <label class="for-checkbox-booking" for="noSmoking">
+                          <img src="img/icon/no-smoking.svg" width="18" alt="">
+                          <span class="text-14">No Smoking Rooms</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="accessible">
+                        <label class="for-checkbox-booking" for="accessible">
+                          <img src="img/icon/accessible.svg" width="18" alt="">
+                          <span class="text-14">Accessible Rooms</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="miniBar">
+                        <label class="for-checkbox-booking" for="miniBar">
+                          <img src="img/icon/minibar.svg" width="18" alt="">
+                          <span class="text-14">Minibar</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="laundry">
+                        <label class="for-checkbox-booking" for="laundry">
+                          <img src="img/icon/laundry.svg" width="18" alt="">
+                          <span class="text-14">Laundry Service</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="fitness">
+                        <label class="for-checkbox-booking" for="fitness">
+                          <img src="img/icon/fitness.svg" width="18" alt="">
+                          <span class="text-14">Fitness Center</span>
+                        </label>
+                      </div>
+                      <hr class="border-bottom my-4" />
+                      <button class="filterSubmit button py-15 px-0 xol12 rounded-10 text-white">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="border-bottom p-0 m-0">
+
+              <div class="sidebar__item py-10">
+                <div class="relative js-form-dd rounded-0">
+                  <button class="d-flex items-center width-100 justify-between py-20 px-20" data-x-dd-click="dropdownNeighbor">
+                    <h5 class="text-14 fw-600">Room Facilities</h5>
+                    <i class="icon icon-chevron-right text-18 ml-10"></i>
+                  </button>
+    
+                  <div class="dropRating bg-white shadow-2 rounded-16" data-x-dd="dropdownNeighbor" data-x-dd-toggle="-is-active">
+                    <div class="px-20 py-20">
+                      <div class="col-auto">
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="freeLCD">
+                        <label class="for-checkbox-booking" for="freeLCD">
+                          <span class="text">LCD & Screen</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="soundSystem">
+                        <label class="for-checkbox-booking" for="soundSystem">
+                          <span class="text">Sound System</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="banner">
+                        <label class="for-checkbox-booking" for="banner">
+                          <span class="text">Welcome Banner</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="backdrop">
+                        <label class="for-checkbox-booking" for="backdrop">
+                          <span class="text">Backdrop</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="candy">
+                        <label class="for-checkbox-booking" for="candy">
+                          <span class="text">Candy</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="mineralWater">
+                        <label class="for-checkbox-booking" for="mineralWater">
+                          <span class="text">Mineral Water</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="notes">
+                        <label class="for-checkbox-booking" for="notes">
+                          <span class="text">Notes</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="pencils">
+                        <label class="for-checkbox-booking" for="pencils">
+                          <span class="text">Pencils</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="pens">
+                        <label class="for-checkbox-booking" for="pens">
+                          <span class="text">Pens</span>
+                        </label>
+
+                      </div>
+                      <hr class="border-bottom my-4" />
+                      <button class="filterSubmit button py-15 px-0 xol12 rounded-10 text-white">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="border-bottom p-0 m-0">
+
+              <div class="sidebar__item py-10">
+                <div class="relative js-form-dd rounded-0">
+                  <button class="d-flex items-center width-100 justify-between py-20 px-20" data-x-dd-click="dropdownNeighbor">
+                    <h5 class="text-14 fw-600">Wall Facilities</h5>
+                    <i class="icon icon-chevron-right text-18 ml-10"></i>
+                  </button>
+    
+                  <div class="dropRating bg-white shadow-2 rounded-16" data-x-dd="dropdownNeighbor" data-x-dd-toggle="-is-active">
+                    <div class="px-20 py-20">
+                      <div class="col-auto">
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="partition">
+                        <label class="for-checkbox-booking" for="partition">
+                          <span class="text">Partition</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="solidWall">
+                        <label class="for-checkbox-booking" for="solidWall">
+                          <span class="text">Solid Wall</span>
+                        </label>
+                        
+                      </div>
+                      <hr class="border-bottom my-4" />
+                      <button class="filterSubmit button py-15 px-0 xol12 rounded-10 text-white">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="border-bottom p-0 m-0">
+
+              <div class="sidebar__item py-10">
+                <div class="relative js-form-dd rounded-0">
+                  <button class="d-flex items-center width-100 justify-between py-20 px-20" data-x-dd-click="dropdownNeighbor">
+                    <h5 class="text-14 fw-600">Floor Facilities</h5>
+                    <i class="icon icon-chevron-right text-18 ml-10"></i>
+                  </button>
+    
+                  <div class="dropRating bg-white shadow-2 rounded-16" data-x-dd="dropdownNeighbor" data-x-dd-toggle="-is-active">
+                    <div class="px-20 py-20">
+                      <div class="col-auto">
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="ceramics">
+                        <label class="for-checkbox-booking" for="ceramics">
+                          <span class="text">Ceramics</span>
+                        </label>
+                        
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="granite">
+                        <label class="for-checkbox-booking" for="granite">
+                          <span class="text">Granite</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="carpet">
+                        <label class="for-checkbox-booking" for="carpet">
+                          <span class="text">Carpet</span>
+                        </label>
+
+                        <input class="checkbox-booking" type="checkbox" name="booking" id="parquet">
+                        <label class="for-checkbox-booking" for="parquet">
+                          <span class="text">Parquet</span>
+                        </label>
+                      </div>
+                      <hr class="border-bottom my-4" />
+                      <button class="filterSubmit button py-15 px-0 xol12 rounded-10 text-white">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-xl-9 col-lg-9">
+            <div class="row y-gap-10 items-center justify-between">
+              <div class="col-auto d-grid align-items-center y-gap-10 quick-filters">
+                <div class="text-14 mr-15"><span class="fw-500">Selected Filters:&nbsp;</div>
+                <div class="border-left-light h-34"></div>
+                <div class="filter-selection">
+                  <button class="button h-40 px-20 ml-10 rounded-100 text-15 bg-light-1 d-flex align-items-center">
+                    51-200 cars
+                    <i class="icon-close text-14 ml-10"></i>
+                  </button>
+  
+                  <button class="button h-40 px-20 ml-10 rounded-100 text-15 bg-light-1 d-flex align-items-center">
+                    Free Parking
+                    <i class="icon-close text-14 ml-10"></i>
+                  </button>
+  
+                  <button class="button h-40 px-20 ml-10 rounded-100 text-15 bg-light-1 d-flex align-items-center">
+                    Spa Massage
+                    <i class="icon-close text-14 ml-10"></i>
+                  </button>
+                  <button class="clear-selection ml-10">Clear Selection</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-30"></div>
+
+            <div class="row y-gap-30">
+
+              <h3 class="mb-10 text-22">26 Venues found</h3>
+
+              <div class="col-12">
+
+                <div class="border-card-hotel">
+                  <div class="row md-gap-20">
+                    <div class="col-md-auto">
+
+                      <div class="cardImage detail-slider rounded-10">
+                        <div class="cardImage__content">
+                          <div class="cardImage-slider h-100 rounded-10 overflow-hidden js-cardImage-slider">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/1.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/2.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                            </div>
+
+                            <div class="cardImage-slider__pagination js-pagination"></div>
+
+                            <div class="cardImage-slider__nav -prev">
+                              <button class="button js-prev">
+                                <i class="icon-chevron-left text-white text-24"></i>
+                              </button>
+                            </div>
+
+                            <div class="cardImage-slider__nav -next">
+                              <button class="button js-next">
+                                <i class="icon-chevron-right text-white text-24"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md">
+                      <a href="detail-room.html">
+                        <h5 class="text-15 fw-500 d-flex align-items-center">
+                          <label class="pr-10">Hotel</label>
+                          <img src="img/icon/dots.svg" width="5" alt="">
+                          <div class="d-inline-block ml-10">
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                          </div>
+                        </h5>
+  
+                        <h3 class="text-22 text-black">Kayu Arum Resort</h3>
+  
+                        <div class="row">
+                          <div class="col-auto">
+                            <a href="https://map.google.com" target="_blank" class="d-flex">
+                              <img class="mr-10" src="img/icon/location.svg" width="14" alt="">
+                              <p class="text-14 text-overflow-address">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari Surakarta, Manahan, Central Java, 57139, Indonesia</p>
+                            </a>
+                          </div>
+                        </div>
+  
+                        <hr class="border-bottom" />
+  
+                        <div class="text-15 lh-15 mt-10">
+                          <p class="paragraph-card">Swiss-Bellin Saripetojo Solo, Pacific Place is the destination for successful business conferences, meetings and events. Showcasing an array of flexible venues, this premier business hotel is the first option and the last word when it comes to meetings in Jakarta.Select from an array of modern venue spaces with options ranging from sunny salons to a 200-person outdoor space to The Ritz-Carlton Ballroom, a sweeping venue that can accommodate up to 8,000 people and is the largest hotel ballroom in Jakarta. This five-star business hotel also offers state-of-the-art technology and personalized catering, perfect for conventions, meetings, conferences and trade shows. Complement your experience with a dedicated conference-floor concierge for every event.</p>
+                          <a href="detail-room.html" class="clear-selection text-15">Read More</a>
+                        </div>
+  
+                        <div class="text-15 text-black lh-15 mt-10">
+                          <div class="fw-600">Facilities:</div>
+                        </div>
+  
+                        <div class="row x-gap-10 y-gap-10 pt-10">
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/free-wifi.svg" width="20" alt="">
+                              Free Internet Access
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/checkin.svg" width="20" alt="">
+                              Fast Check-in
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/laundry.svg" width="20" alt="">
+                              Laundry Service
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/airport.svg" width="20" alt="">
+                              Airport Shuttle
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/spa.svg" width="20" alt="">
+                              Spa Massage
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <hr class="border-bottom" />
+                        
+                        <div class="row">
+                          <div class="w-25 sm:w-1/2 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/capacity.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">50 - 250</label>
+                          </div>
+                          <div class="w-25 sm:w-1/2 sm:py-10 sm\:w-1\/2 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/parkir.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">&lt; 50-100</label>
+                          </div>
+                          <div class="w-50 sm:w-1/1 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/room.svg" width="24" height="24" alt="capacity">
+                            <label class="text-overflow-type text-14 fw-500">Theater, Hollow Square, U-Shape</label>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="border-card-hotel">
+                  <div class="row md-gap-20">
+                    <div class="col-md-auto">
+
+                      <div class="cardImage detail-slider rounded-10">
+                        <div class="cardImage__content">
+                          <div class="cardImage-slider h-100 rounded-10 overflow-hidden js-cardImage-slider">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/2.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/4.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                            </div>
+
+                            <div class="cardImage-slider__pagination js-pagination"></div>
+
+                            <div class="cardImage-slider__nav -prev">
+                              <button class="button js-prev">
+                                <i class="icon-chevron-left text-white text-24"></i>
+                              </button>
+                            </div>
+
+                            <div class="cardImage-slider__nav -next">
+                              <button class="button js-next">
+                                <i class="icon-chevron-right text-white text-24"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <a href="detail-room.html">
+                        <h5 class="text-15 fw-500 d-flex align-items-center">
+                          <label class="pr-10">Non Hotel</label>
+                          <img src="img/icon/dots.svg" width="5" alt="">
+                          <div class="d-inline-block ml-10">
+                            <img src="img/icon/non-hotel.svg" width="18" alt="">
+                            <img src="img/icon/non-hotel.svg" width="18" alt="">
+                            <img src="img/icon/non-hotel.svg" width="18" alt="">
+                          </div>
+                        </h5>
+  
+                        <h3 class="text-22 text-black">Petit Boutique Solo</h3>
+  
+                        <div class="row">
+                          <div class="col-auto">
+                            <a href="https://map.google.com" target="_blank" class="d-flex">
+                              <img class="mr-10" src="img/icon/location.svg" width="14" alt="">
+                              <p class="text-14 text-overflow-address">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari Surakarta, Manahan, Central Java, 57139, Indonesia</p>
+                            </a>
+                          </div>
+                        </div>
+  
+                        <hr class="border-bottom" />
+  
+                        <div class="text-15 lh-15 mt-10">
+                          <p class="paragraph-card">Swiss-Bellin Saripetojo Solo, Pacific Place is the destination for successful business conferences, meetings and events. Showcasing an array of flexible venues, this premier business hotel is the first option and the last word when it comes to meetings in Jakarta.Select from an array of modern venue spaces with options ranging from sunny salons to a 200-person outdoor space to The Ritz-Carlton Ballroom, a sweeping venue that can accommodate up to 8,000 people and is the largest hotel ballroom in Jakarta. This five-star business hotel also offers state-of-the-art technology and personalized catering, perfect for conventions, meetings, conferences and trade shows. Complement your experience with a dedicated conference-floor concierge for every event.</p>
+                          <a href="detail-room.html" class="clear-selection text-15">Read More</a>
+                        </div>
+  
+                        <div class="text-15 text-black lh-15 mt-10">
+                          <div class="fw-600">Facilities:</div>
+                        </div>
+  
+                        <div class="row x-gap-10 y-gap-10 pt-10">
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/free-wifi.svg" width="20" alt="">
+                              Free Internet Access
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/checkin.svg" width="20" alt="">
+                              Fast Check-in
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/laundry.svg" width="20" alt="">
+                              Laundry Service
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/airport.svg" width="20" alt="">
+                              Airport Shuttle
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/spa.svg" width="20" alt="">
+                              Spa Massage
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <hr class="border-bottom" />
+                        
+                        <div class="row">
+                          <div class="w-25 sm:w-1/2 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/capacity.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">50 - 250</label>
+                          </div>
+                          <div class="w-25 sm:w-1/2 sm:py-10 sm\:w-1\/2 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/parkir.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">&lt; 50-100</label>
+                          </div>
+                          <div class="w-50 sm:w-1/1 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/room.svg" width="24" height="24" alt="capacity">
+                            <label class="text-overflow-type text-14 fw-500">Theater, Hollow Square, U-Shape</label>
+                          </div>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="border-card-hotel">
+                  <div class="row md-gap-20">
+                    <div class="col-md-auto">
+
+                      <div class="cardImage detail-slider rounded-10">
+                        <div class="cardImage__content">
+                          <div class="cardImage-slider h-100 rounded-10 overflow-hidden js-cardImage-slider">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/4.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                            </div>
+
+                            <div class="cardImage-slider__pagination js-pagination"></div>
+
+                            <div class="cardImage-slider__nav -prev">
+                              <button class="button js-prev">
+                                <i class="icon-chevron-left text-white text-24"></i>
+                              </button>
+                            </div>
+
+                            <div class="cardImage-slider__nav -next">
+                              <button class="button js-next">
+                                <i class="icon-chevron-right text-white text-24"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <a href="detail-room.html">
+                        <h5 class="text-15 fw-500 d-flex align-items-center">
+                          <label class="pr-10">Hotel</label>
+                          <img src="img/icon/dots.svg" width="5" alt="">
+                          <div class="d-inline-block ml-10">
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                          </div>
+                        </h5>
+  
+                        <h3 class="text-22 text-black">Petit Boutique Solo</h3>
+  
+                        <div class="row">
+                          <div class="col-auto">
+                            <a href="https://map.google.com" target="_blank" class="d-flex">
+                              <img class="mr-10" src="img/icon/location.svg" width="14" alt="">
+                              <p class="text-14 text-overflow-address">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari Surakarta, Manahan, Central Java, 57139, Indonesia</p>
+                            </a>
+                          </div>
+                        </div>
+  
+                        <hr class="border-bottom" />
+  
+                        <div class="text-15 lh-15 mt-10">
+                          <p class="paragraph-card">Swiss-Bellin Saripetojo Solo, Pacific Place is the destination for successful business conferences, meetings and events. Showcasing an array of flexible venues, this premier business hotel is the first option and the last word when it comes to meetings in Jakarta.Select from an array of modern venue spaces with options ranging from sunny salons to a 200-person outdoor space to The Ritz-Carlton Ballroom, a sweeping venue that can accommodate up to 8,000 people and is the largest hotel ballroom in Jakarta. This five-star business hotel also offers state-of-the-art technology and personalized catering, perfect for conventions, meetings, conferences and trade shows. Complement your experience with a dedicated conference-floor concierge for every event.</p>
+                          <a href="detail-room.html" class="clear-selection text-15">Read More</a>
+                        </div>
+  
+                        <div class="text-15 text-black lh-15 mt-10">
+                          <div class="fw-600">Facilities:</div>
+                        </div>
+  
+                        <div class="row x-gap-10 y-gap-10 pt-10">
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/free-wifi.svg" width="20" alt="">
+                              Free Internet Access
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/checkin.svg" width="20" alt="">
+                              Fast Check-in
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/laundry.svg" width="20" alt="">
+                              Laundry Service
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/airport.svg" width="20" alt="">
+                              Airport Shuttle
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/spa.svg" width="20" alt="">
+                              Spa Massage
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <hr class="border-bottom" />
+                        
+                        <div class="row">
+                          <div class="w-25 sm:w-1/2 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/capacity.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">50 - 250</label>
+                          </div>
+                          <div class="w-25 sm:w-1/2 sm:py-10 sm\:w-1\/2 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/parkir.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">&lt; 50-100</label>
+                          </div>
+                          <div class="w-50 sm:w-1/1 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/room.svg" width="24" height="24" alt="capacity">
+                            <label class="text-overflow-type text-14 fw-500">Theater, Hollow Square, U-Shape</label>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="border-card-hotel">
+                  <div class="row md-gap-20">
+                    <div class="col-md-auto">
+
+                      <div class="cardImage detail-slider rounded-10">
+                        <div class="cardImage__content">
+                          <div class="cardImage-slider h-100 rounded-10 overflow-hidden js-cardImage-slider">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/4.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/2.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                            </div>
+
+                            <div class="cardImage-slider__pagination js-pagination"></div>
+
+                            <div class="cardImage-slider__nav -prev">
+                              <button class="button js-prev">
+                                <i class="icon-chevron-left text-white text-24"></i>
+                              </button>
+                            </div>
+
+                            <div class="cardImage-slider__nav -next">
+                              <button class="button js-next">
+                                <i class="icon-chevron-right text-white text-24"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <a href="detail-room.html">
+                        <h5 class="text-15 fw-500 d-flex align-items-center">
+                          <label class="pr-10">Hotel</label>
+                          <img src="img/icon/dots.svg" width="5" alt="">
+                          <div class="d-inline-block ml-10">
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                          </div>
+                        </h5>
+  
+                        <h3 class="text-22 text-black">Fave Hotel Manahan</h3>
+  
+                        <div class="row">
+                          <div class="col-auto">
+                            <a href="https://map.google.com" target="_blank" class="d-flex">
+                              <img class="mr-10" src="img/icon/location.svg" width="14" alt="">
+                              <p class="text-14 text-overflow-address">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari Surakarta, Manahan, Central Java, 57139, Indonesia</p>
+                            </a>
+                          </div>
+                        </div>
+  
+                        <hr class="border-bottom" />
+  
+                        <div class="text-15 lh-15 mt-10">
+                          <p class="paragraph-card">Swiss-Bellin Saripetojo Solo, Pacific Place is the destination for successful business conferences, meetings and events. Showcasing an array of flexible venues, this premier business hotel is the first option and the last word when it comes to meetings in Jakarta.Select from an array of modern venue spaces with options ranging from sunny salons to a 200-person outdoor space to The Ritz-Carlton Ballroom, a sweeping venue that can accommodate up to 8,000 people and is the largest hotel ballroom in Jakarta. This five-star business hotel also offers state-of-the-art technology and personalized catering, perfect for conventions, meetings, conferences and trade shows. Complement your experience with a dedicated conference-floor concierge for every event.</p>
+                          <a href="detail-room.html" class="clear-selection text-15">Read More</a>
+                        </div>
+  
+                        <div class="text-15 text-black lh-15 mt-10">
+                          <div class="fw-600">Facilities:</div>
+                        </div>
+  
+                        <div class="row x-gap-10 y-gap-10 pt-10">
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/free-wifi.svg" width="20" alt="">
+                              Free Internet Access
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/checkin.svg" width="20" alt="">
+                              Fast Check-in
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/laundry.svg" width="20" alt="">
+                              Laundry Service
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/airport.svg" width="20" alt="">
+                              Airport Shuttle
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/spa.svg" width="20" alt="">
+                              Spa Massage
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <hr class="border-bottom" />
+                        
+                        <div class="row">
+                          <div class="w-25 sm:w-1/2 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/capacity.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">50 - 250</label>
+                          </div>
+                          <div class="w-25 sm:w-1/2 sm:py-10 sm\:w-1\/2 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/parkir.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">&lt; 50-100</label>
+                          </div>
+                          <div class="w-50 sm:w-1/1 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/room.svg" width="24" height="24" alt="capacity">
+                            <label class="text-overflow-type text-14 fw-500">Theater, Hollow Square, U-Shape</label>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="border-card-hotel">
+                  <div class="row md-gap-20">
+                    <div class="col-md-auto">
+
+                      <div class="cardImage detail-slider rounded-10">
+                        <div class="cardImage__content">
+                          <div class="cardImage-slider h-100 rounded-10 overflow-hidden js-cardImage-slider">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/2.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/4.jpg" alt="image">
+                              </div>
+
+                            </div>
+
+                            <div class="cardImage-slider__pagination js-pagination"></div>
+
+                            <div class="cardImage-slider__nav -prev">
+                              <button class="button js-prev">
+                                <i class="icon-chevron-left text-white text-24"></i>
+                              </button>
+                            </div>
+
+                            <div class="cardImage-slider__nav -next">
+                              <button class="button js-next">
+                                <i class="icon-chevron-right text-white text-24"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <a href="detail-room.html">
+                        <h5 class="text-15 fw-500 d-flex align-items-center">
+                          <label class="pr-10">Hotel</label>
+                          <img src="img/icon/dots.svg" width="5" alt="">
+                          <div class="d-inline-block ml-10">
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                          </div>
+                        </h5>
+  
+                        <h3 class="text-22 text-black">Zest Hotel Solo</h3>
+  
+                        <div class="row">
+                          <div class="col-auto">
+                            <a href="https://map.google.com" target="_blank" class="d-flex">
+                              <img class="mr-10" src="img/icon/location.svg" width="14" alt="">
+                              <p class="text-14 text-overflow-address">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari Surakarta, Manahan, Central Java, 57139, Indonesia</p>
+                            </a>
+                          </div>
+                        </div>
+  
+                        <hr class="border-bottom" />
+  
+                        <div class="text-15 lh-15 mt-10">
+                          <p class="paragraph-card">Swiss-Bellin Saripetojo Solo, Pacific Place is the destination for successful business conferences, meetings and events. Showcasing an array of flexible venues, this premier business hotel is the first option and the last word when it comes to meetings in Jakarta.Select from an array of modern venue spaces with options ranging from sunny salons to a 200-person outdoor space to The Ritz-Carlton Ballroom, a sweeping venue that can accommodate up to 8,000 people and is the largest hotel ballroom in Jakarta. This five-star business hotel also offers state-of-the-art technology and personalized catering, perfect for conventions, meetings, conferences and trade shows. Complement your experience with a dedicated conference-floor concierge for every event.</p>
+                          <a href="detail-room.html" class="clear-selection text-15">Read More</a>
+                        </div>
+  
+                        <div class="text-15 text-black lh-15 mt-10">
+                          <div class="fw-600">Facilities:</div>
+                        </div>
+  
+                        <div class="row x-gap-10 y-gap-10 pt-10">
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/free-wifi.svg" width="20" alt="">
+                              Free Internet Access
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/checkin.svg" width="20" alt="">
+                              Fast Check-in
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/laundry.svg" width="20" alt="">
+                              Laundry Service
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/airport.svg" width="20" alt="">
+                              Airport Shuttle
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/spa.svg" width="20" alt="">
+                              Spa Massage
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <hr class="border-bottom" />
+                        
+                        <div class="row">
+                          <div class="w-25 sm:w-1/2 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/capacity.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">50 - 250</label>
+                          </div>
+                          <div class="w-25 sm:w-1/2 sm:py-10 sm\:w-1\/2 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/parkir.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">&lt; 50-100</label>
+                          </div>
+                          <div class="w-50 sm:w-1/1 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/room.svg" width="24" height="24" alt="capacity">
+                            <label class="text-overflow-type text-14 fw-500">Theater, Hollow Square, U-Shape</label>
+                          </div>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="border-card-hotel">
+                  <div class="row md-gap-20">
+                    <div class="col-md-auto">
+
+                      <div class="cardImage detail-slider rounded-10">
+                        <div class="cardImage__content">
+                          <div class="cardImage-slider h-100 rounded-10 overflow-hidden js-cardImage-slider">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/1.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/2.jpg" alt="image">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="col-12 h-100" src="img/lists/hotel/2/3.jpg" alt="image">
+                              </div>
+
+                            </div>
+
+                            <div class="cardImage-slider__pagination js-pagination"></div>
+
+                            <div class="cardImage-slider__nav -prev">
+                              <button class="button js-prev">
+                                <i class="icon-chevron-left text-white text-24"></i>
+                              </button>
+                            </div>
+
+                            <div class="cardImage-slider__nav -next">
+                              <button class="button js-next">
+                                <i class="icon-chevron-right text-white text-24"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <a href="detail-room.html">
+                        <h5 class="text-15 fw-500 d-flex align-items-center">
+                          <label class="pr-10">Hotel</label>
+                          <img src="img/icon/dots.svg" width="5" alt="">
+                          <div class="d-inline-block ml-10">
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                            <i class="icon-star text-15 text-yellow-1"></i>
+                          </div>
+                        </h5>
+  
+                        <h3 class="text-22 text-black">Aston Solo Hotel</h3>
+  
+                        <div class="row">
+                          <div class="col-auto">
+                            <a href="https://map.google.com" target="_blank" class="d-flex">
+                              <img class="mr-10" src="img/icon/location.svg" width="14" alt="">
+                              <p class="text-14 text-overflow-address">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari Surakarta, Manahan, Central Java, 57139, Indonesia</p>
+                            </a>
+                          </div>
+                        </div>
+  
+                        <hr class="border-bottom" />
+  
+                        <div class="text-15 lh-15 mt-10">
+                          <p class="paragraph-card">Swiss-Bellin Saripetojo Solo, Pacific Place is the destination for successful business conferences, meetings and events. Showcasing an array of flexible venues, this premier business hotel is the first option and the last word when it comes to meetings in Jakarta.Select from an array of modern venue spaces with options ranging from sunny salons to a 200-person outdoor space to The Ritz-Carlton Ballroom, a sweeping venue that can accommodate up to 8,000 people and is the largest hotel ballroom in Jakarta. This five-star business hotel also offers state-of-the-art technology and personalized catering, perfect for conventions, meetings, conferences and trade shows. Complement your experience with a dedicated conference-floor concierge for every event.</p>
+                          <a href="detail-room.html" class="clear-selection text-15">Read More</a>
+                        </div>
+  
+                        <div class="text-15 text-black lh-15 mt-10">
+                          <div class="fw-600">Facilities:</div>
+                        </div>
+  
+                        <div class="row x-gap-10 y-gap-10 pt-10">
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/free-wifi.svg" width="20" alt="">
+                              Free Internet Access
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/checkin.svg" width="20" alt="">
+                              Fast Check-in
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/laundry.svg" width="20" alt="">
+                              Laundry Service
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/airport.svg" width="20" alt="">
+                              Airport Shuttle
+                            </div>
+                          </div>
+  
+                          <div class="col-auto">
+                            <div class="bg-card d-grid align-items-center rounded-100 py-5 px-20 text-12 lh-14">
+                              <img src="img/icon/spa.svg" width="20" alt="">
+                              Spa Massage
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <hr class="border-bottom" />
+                        
+                        <div class="row">
+                          <div class="w-25 sm:w-1/2 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/capacity.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">50 - 250</label>
+                          </div>
+                          <div class="w-25 sm:w-1/2 sm:py-10 sm\:w-1\/2 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/parkir.svg" width="24" height="24" alt="capacity">
+                            <label class="text-14 fw-500">&lt; 50-100</label>
+                          </div>
+                          <div class="w-50 sm:w-1/1 sm:py-10 d-flex align-items-center">
+                            <img class="mr-5" src="img/icon/room.svg" width="24" height="24" alt="capacity">
+                            <label class="text-overflow-type text-14 fw-500">Theater, Hollow Square, U-Shape</label>
+                          </div>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="text-center">Load more venues... <img src="img/icon/load.svg" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer -type-2">
+      <div class="container">
+
+        <div class="py-20 border-top-white-15">
+          <div class="row justify-center items-center y-gap-10">
+            <div class="col-auto">
+              <img src="img/general/logo-alter.svg" width="205" height="auto" alt="">
+              <div class="row x-gap-30 y-gap-10">
+                <div class="col-auto">
+                  <div class="text-14 fw-700">
+                    Copyright © 2022 DepanMata.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
