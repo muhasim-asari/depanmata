@@ -38,8 +38,9 @@
     sectionSlider();
     Select.init(".js-select");
     parallaxInit();
+    toolbarMenu();
     Events.init();
-    Events.ddInit();
+    // Events.ddInit();
     Header.init();
     Header.headerSticky();
 
@@ -54,7 +55,7 @@
     parallaxIt();
     liveSearch();
     // mobileModal();
-    mobileModalMobile();
+    // mobileModalMobile();
   }
 
   function liveSearch() {
@@ -1190,6 +1191,17 @@
       init: init,
     };
   })();
+
+  function toolbarMenu() {
+    let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+    if (width < 992) {
+      mobileModalMobile();
+    } else {
+      Events.init();
+      Events.ddInit();
+    }
+  }
 
   /*--------------------------------------------------
   06. Header

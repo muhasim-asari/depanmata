@@ -84,7 +84,7 @@
                 <!-- Live Search -->
                 <div class="searchMenu-loc border-white-15 js-form-dd js-liverSearch">
 
-                  <div data-x-dd-click="searchMenu-loc">
+                  <div data-x-dd-click="searchMenu-loc" data-modal-target=".liverSearch__mobile" class="js-modal-popup">
                     <h4 class="text-15 fw-500 ls-2 lh-16">Destination or Property Name</h4>
 
                     <div class="text-15 text-light-1 ls-2 lh-16">
@@ -316,7 +316,7 @@
                 <!-- Guest -->
                 <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
 
-                  <div data-x-dd-click="searchMenu-guests">
+                  <div data-x-dd-click="searchMenu-guests" data-modal-target=".guests__mobile" class="js-modal-popup">
                     <h4 class="text-15 fw-500 ls-2 lh-16">Guest</h4>
 
                     <div class="text-15 text-light-1 ls-2 lh-16">
@@ -393,7 +393,7 @@
                 <!-- Venue Rating -->
                 <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
 
-                  <div data-x-dd-click="searchMenu-venue">
+                  <div data-x-dd-click="searchMenu-venue" data-modal-target=".venueRating__mobile" class="js-modal-popup">
                     <h4 class="text-15 fw-500 ls-2 lh-16">Venue Rating</h4>
 
                     <!-- <div class="text-15 text-light-1 ls-2 lh-16">
@@ -463,7 +463,7 @@
                 <!-- Room Type -->
                 <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
 
-                  <div data-x-dd-click="searchMenu-type">
+                  <div data-x-dd-click="searchMenu-type" data-modal-target=".roomType__mobile" class="js-modal-popup">
                     <h4 class="text-15 fw-500 ls-2 lh-16">Room Type</h4>
 
                     <!-- <div class="text-15 text-light-1 ls-2 lh-16 text-overflow-type-toolbar">
@@ -681,480 +681,103 @@
         </div>
       </div>
     </footer>
+    <form action="">
+      <!-- Live Search Popup -->
+      <div class="sheet-wrapper liverSearch__mobile">
+        <div class="backdrop"></div>
+        <div class="content-sheet bottom">
+          <div class="container">
+            live search
+          </div>
+        </div>
+      </div>
+      <!-- End Live Search Popup -->
 
-    <div class="sheet-wrapper">
-      <div class="backdrop"></div>
-      <div class="content-sheet top">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div data-anim-child="slide-up delay-6" class="mainSearch bg-white py-30 px-20 rounded-10 shadow-1 is-in-view">
-                <h3 data-anim-child="slide-up delay-4" class="text-40 lg:text-40 md:text-20 text-center mb-30 is-in-view">Discover Conference Venues</h3>
-                <div class="button-grid items-center">
-                  
-                  <!-- Live Search -->
-                  <div class="searchMenu-loc border-white-15 js-form-dd js-liverSearch">
-  
-                    <div data-x-dd-click="searchMenu-loc">
-                      <h4 class="text-15 fw-500 ls-2 lh-16">Destination or Property Name</h4>
-  
-                      <div class="text-15 text-light-1 ls-2 lh-16">
-                        <input autocomplete="off" type="search" placeholder="City, airport, region, landmark, atau property name" class="js-search js-dd-focus">
-                      </div>
-                    </div>
-  
-  
-                    <div class="searchMenu-loc__field screen shadow-2 js-popup-window" data-x-dd="searchMenu-loc" data-x-dd-toggle="-is-active">
-                      <div class="bg-white px-30 py-30 sm:px-0 sm:py-15 rounded-4">
-                        <div class="y-gap-5 js-results">
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-location.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Solo</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-location.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Manahan</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-location.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Jebres</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type pt-4">
-                                  <img src="img/icon/pin-location.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Banjarsari</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5">Solo, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-location.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Laweyan</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-poi.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Manahan Stadium</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-poi.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Taman Balekambang</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">CRX4+2X2 Balekambang Park, Jl. Balekambang, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-poi.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Solo Paragon Mall</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. Yosodipuro No.133, Mangkubumen, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-poi.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Pura Mangkunegaran</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. Ronggowarsito No.83, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-poi.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Stasiun Balapan</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jalan Wolter Monginsidi No.112, Kestalan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57133</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-property.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Red Chilies Hotel</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari, Surakarta</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-property.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Swiss-Belhotel Solo</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">45 Jalan Ahmad Yani, Banjarsari, Surakarta</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-property.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Red Planet Solo</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Mangkubumen, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-property.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Sans Hotel Fourth Loft Solo</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                          <div>
-                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                              <div class="d-flex">
-                                <div class="icon-type">
-                                  <img src="img/icon/pin-property.svg" alt="icon-location">
-                                </div>
-                                <div class="ml-10">
-                                  <div class="text-15 lh-12 fw-500 js-search-option-target">Dinasty Smart Hotel</div>
-                                  <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
-                                </div>
-                              </div>
-                            </button>
-                          </div>
-  
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Live Search -->
-  
-                  <!-- Guest -->
-                  <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
-  
-                    <div data-x-dd-click="searchMenu-guests">
-                      <h4 class="text-15 fw-500 ls-2 lh-16">Guest</h4>
-  
-                      <div class="text-15 text-light-1 ls-2 lh-16">
-                        <span class="js-count-adult">&lt; 50</span> Pax
-                      </div>
-                    </div>
-  
-  
-                    <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-guests" data-x-dd-toggle="-is-active">
-                      <div class="bg-white px-30 py-30 rounded-4">
-                        <div class="row y-gap-10 justify-between flex-column">
-                          <div class="col-auto px-0 py-10">
-                            <div class="text-15 fw-700">Guest Capacity</div>
-                          </div>
-  
-                          <div class="col-auto guest-capacity px-0">
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked="">
-                            <label class="for-checkbox-tools" for="tool-1">
-                              &lt; 50
-                            </label>
-                            
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-2">
-                            <label class="for-checkbox-tools" for="tool-2">
-                              51-100
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-3">
-                            <label class="for-checkbox-tools" for="tool-3">
-                              101-200
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-4">
-                            <label class="for-checkbox-tools" for="tool-4">
-                              201-300
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-5">
-                            <label class="for-checkbox-tools" for="tool-5">
-                              301-400
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-6">
-                            <label class="for-checkbox-tools" for="tool-6">
-                              401-500
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-7">
-                            <label class="for-checkbox-tools" for="tool-7">
-                              501-600
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-8">
-                            <label class="for-checkbox-tools" for="tool-8">
-                              601-700
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-9">
-                            <label class="for-checkbox-tools" for="tool-9">
-                              701-1000
-                            </label>
-  
-                            <input class="checkbox-tools" type="radio" name="tools" id="tool-10">
-                            <label class="for-checkbox-tools" for="tool-10">
-                              &gt; 1000
-                            </label>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div> 
-                  <!-- End guest -->
-  
-                  <!-- Venue Rating -->
-                  <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
-  
-                    <div data-x-dd-click="searchMenu-venue">
-                      <h4 class="text-15 fw-500 ls-2 lh-16">Venue Rating</h4>
-  
-                      <!-- <div class="text-15 text-light-1 ls-2 lh-16">
-                        <span class="js-count-adult">Hotel, Non Hotel, 5 Star Hotel
-                      </div> -->
-  
-                      <div class="text-15 text-light-1 ls-2 lh-16">
-                        <input autocomplete="off" type="text" placeholder="Hotel, Non Hotel, 5 Star Hotel" class="js-search js-dd-focus">
-                      </div>
-                    </div>
-  
-  
-                    <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-venue" data-x-dd-toggle="-is-active">
-                      <div class="bg-white px-30 py-30 rounded-10">
-                        <div class="row y-gap-10 justify-between flex-column">
-                          <div class="col-auto border-bottom d-flex justify-end px-0">
-                            <button class="clear-selection">Clear Selection</button>
-                          </div>
-  
-                          <div class="col-auto py-10 px-0 border-bottom">
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="allVenues">
-                            <label class="for-checkbox-booking" for="allVenues">
-                              <span class="text">All Venues</span>
-                            </label>
-                            
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="nonHotel">
-                            <label class="for-checkbox-booking" for="nonHotel">							
-                              <span class="text">Non Hotel</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="star5">
-                            <label class="for-checkbox-booking" for="star5">
-                              <span class="text">5 Star</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="star4">
-                            <label class="for-checkbox-booking" for="star4">
-                              <span class="text">4 Star</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="star3">
-                            <label class="for-checkbox-booking" for="star3">
-                              <span class="text">3 Star</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="star2">
-                            <label class="for-checkbox-booking" for="star2">
-                              <span class="text">2 Star</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="star1">
-                            <label class="for-checkbox-booking" for="star1">
-                              <span class="text">1 Star</span>
-                            </label>
-                          </div>
-  
-                          <div class="py-10 "><label>Selected:&nbsp;</label><span>Non Hotel, 5 Star, 4 Star, 3 Star</span></div>
-                        </div>
-                        
-                        <button class="filterSubmit button -dark py-15 px-0 xol12 rounded-10 text-white">Apply</button>
-  
-                      </div>
-                    </div>
-                  </div> 
-                  <!-- End Room Type -->
-  
-                  <!-- Room Type -->
-                  <div class="searchMenu-guests border-white-15 js-form-dd js-form-counters">
-  
-                    <div data-x-dd-click="searchMenu-type">
-                      <h4 class="text-15 fw-500 ls-2 lh-16">Room Type</h4>
-  
-                      <!-- <div class="text-15 text-light-1 ls-2 lh-16 text-overflow-type-toolbar">
-                        <span class="js-count-adult">Banquet, Classroom, Conference, Hollow Square Theatre</span>
-                      </div> -->
-                      
-                      <div class="text-15 text-light-1 ls-2 lh-16">
-                        <input autocomplete="off" type="text" placeholder="Banquet, Classroom, Conference, Hollow Square Theatre" class="js-search js-dd-focus">
-                      </div>
-                    </div>
-  
-  
-                    <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-type" data-x-dd-toggle="-is-active">
-                      <div class="bg-white px-30 py-30 rounded-10">
-                        <div class="row y-gap-10 justify-between flex-column">
-                          <div class="col-auto border-bottom d-flex justify-end px-0">
-                            <button class="clear-selection">Clear Selection</button>
-                          </div>
-  
-                          <div class="col-auto py-10 px-0 border-bottom">
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="banquet">
-                            <label class="for-checkbox-booking py-10 height-60" for="banquet">
-                              <img src="img/type/banquet.png" width="44" alt="">
-                              <span class="text">Banquet</span>
-                            </label>
-                            
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="classroom">
-                            <label class="for-checkbox-booking py-10 height-60" for="classroom">
-                              <img src="img/type/classroom.png" width="40" alt="">						
-                              <span class="text">Classroom</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="conference">
-                            <label class="for-checkbox-booking py-10 height-60" for="conference">
-                              <img src="img/type/conference.png" width="80" alt="">
-                              <span class="text">Conference</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="theater">
-                            <label class="for-checkbox-booking py-10 height-60" for="theater">
-                              <img src="img/type/theater.png" width="70" alt="">
-                              <span class="text">Theater</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="hollowSquare">
-                            <label class="for-checkbox-booking py-10 height-60" for="hollowSquare">
-                              <img src="img/type/hollow.png" width="44" alt="">
-                              <span class="text">Hollow Square</span>
-                            </label>
-  
-                            <input class="checkbox-booking" type="checkbox" name="booking" id="uShape">
-                            <label class="for-checkbox-booking py-10 height-60" for="uShape">
-                              <img src="img/type/u-shape.png" width="47" alt="">
-                              <span class="text">U-Shape</span>
-                            </label>
-                          </div>
-                          <div class="py-10 "><label>Selected:&nbsp;</label><span> Banquet, Theater, U-Shape</span></div>
-                        </div>
-                        <button class="filterSubmit button -dark py-15 px-0 xol12 rounded-10 text-white">Apply</button>
-                      </div>
-                    </div>
-                  </div> 
-                  <!-- End Room Type -->
-  
-  
-                  <div class="button-item">
-                    <a href="list-hotel.html">
-                      <button class="mainSearch__submit button -dark-1 py-15 px-35 col-12 rounded-10 text-white">
-                        <i class="icon-search text-20 mr-10"></i>
-                        Search
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+
+      <!-- Guests Popup -->    
+      <div class="sheet-wrapper guests__mobile">
+        <div class="backdrop"></div>
+        <div class="content-sheet bottom">
+          <div class="container">
+
+            <div class="col-auto guest-capacity px-0">
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked />
+              <label class="for-checkbox-tools" for="tool-1">
+                &lt; 50
+              </label>
+              
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-2" />
+              <label class="for-checkbox-tools" for="tool-2">
+                51-100
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-3" />
+              <label class="for-checkbox-tools" for="tool-3">
+                101-200
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-4" />
+              <label class="for-checkbox-tools" for="tool-4">
+                201-300
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-5" />
+              <label class="for-checkbox-tools" for="tool-5">
+                301-400
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-6" />
+              <label class="for-checkbox-tools" for="tool-6">
+                401-500
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-7" />
+              <label class="for-checkbox-tools" for="tool-7">
+                501-600
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-8" />
+              <label class="for-checkbox-tools" for="tool-8">
+                601-700
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-9" />
+              <label class="for-checkbox-tools" for="tool-9">
+                701-1000
+              </label>
+
+              <input class="checkbox-tools" type="radio" name="tools" id="tool-10" />
+              <label class="for-checkbox-tools" for="tool-10">
+                &gt; 1000
+              </label>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- End Guests Popup -->
+
+      <!-- Venue Rating Popup -->    
+      <div class="sheet-wrapper venueRating__mobile">
+        <div class="backdrop"></div>
+        <div class="content-sheet bottom">
+          <div class="container">
+            Venue Rating PopUp
+          </div>
+        </div>
+      </div>
+      <!-- End Venue Rating Popup -->
+
+      <!-- Room Type Popup -->    
+      <div class="sheet-wrapper roomType__mobile">
+        <div class="backdrop"></div>
+        <div class="content-sheet bottom">
+          <div class="container">
+            Room Type PopUp
+          </div>
+        </div>
+      </div>
+      <!-- End Venue Rating Popup -->
+    </form>
 
   </main>
 
