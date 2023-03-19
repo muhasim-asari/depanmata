@@ -2495,7 +2495,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mainSearch {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media (max-width: 991px) {
@@ -2812,9 +2812,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; 
 }
 
-.checkbox-booking:checked + label {
+.checkbox-booking:checked + label{
 	background-color: var(--blue-custom);
   color: var(--color-white);
+}
+
+.icon-facilities svg path {
+  fill: var(--color-white);
 }
 
 .height-60 {
@@ -9431,6 +9435,11 @@ div[data-slider] > input[type=range]::-ms-tooltip {
 
 /* Modal Popup Mobile */
 
+.sheet-wrapper {
+  opacity: 0;
+  position: absolute;
+}
+
 .sheet-wrapper .backdrop {
   position: absolute;
   top: 0;
@@ -9463,6 +9472,11 @@ div[data-slider] > input[type=range]::-ms-tooltip {
 
 .sheet-wrapper .content-sheet.top {
   top: -110%;
+}
+
+.sheet-wrapper.mobilePopup__is-active {
+  opacity: 1;
+  position: unset;
 }
 
 .sheet-wrapper.mobilePopup__is-active .backdrop {
