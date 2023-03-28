@@ -426,7 +426,12 @@
 
                           <input class="checkbox-booking" type="checkbox" name="booking" id="star5">
                           <label class="for-checkbox-booking" for="star5">
-                            <span class="text">5 Star</span>
+                            <span class="text">
+                              <svg class="icon-facilities" width="18" height="18">
+                                <use xlink:href="img/icon/star.svg" width="18" height="18" />
+                              </svg>
+                              5 Star
+                            </span>
                           </label>
 
                           <input class="checkbox-booking" type="checkbox" name="booking" id="star4">
@@ -531,8 +536,8 @@
 
                 <div class="button-item">
                   <a href="list-hotel.html">
-                    <button class="mainSearch__submit button -dark-1 py-15 px-35 col-12 rounded-10 text-white">
-                      <i class="icon-search text-20 mr-10"></i>
+                    <button class="mainSearch__submit button -dark-1 py-15 px-35 text-20 col-12 rounded-10 text-white">
+                      <i class="icon-search text-24 mr-10"></i>
                       Search
                     </button>
                   </a>
@@ -547,9 +552,237 @@
       <!-- Live Search Popup -->
       <div class="sheet-wrapper liverSearch__mobile">
         <div class="backdrop"></div>
-        <div class="content-sheet bottom">
+        <div class="content-sheet border-radius-0 bottom">
           <div class="container">
-            live search
+            <div class="fw-500 text-16 d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="icon-close text-14 mr-10 close__mobilePopup"></i>
+                Destination ot Property Name
+              </div>
+            </div>
+
+            <hr class="border-bottom" />
+
+            <div class="d-flex align-items-center liverSearch-mobile rounded-10">
+              <i class="icon-search text-24 mr-10"></i>
+              <div class="text-15 text-light-1 ls-2 lh-16 w-100">
+                <input autocomplete="off" type="search" placeholder="City, airport, region, landmark, atau property name" class="js-search js-dd-focus" />
+              </div>
+            </div>
+            <div class="js-results list-result-mobile">
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-location.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Solo</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-location.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Manahan</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-location.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Jebres</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type pt-4">
+                      <img src="img/icon/pin-location.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Banjarsari</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5">Solo, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-location.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Laweyan</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Solo, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-poi.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Manahan Stadium</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-poi.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Taman Balekambang</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">CRX4+2X2 Balekambang Park, Jl. Balekambang, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-poi.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Solo Paragon Mall</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. Yosodipuro No.133, Mangkubumen, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-poi.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Pura Mangkunegaran</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. Ronggowarsito No.83, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-poi.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Stasiun Balapan</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jalan Wolter Monginsidi No.112, Kestalan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57133</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-property.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Red Chilies Hotel</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Jl. A. Yani No 286, Gondang, Manahan, Banjarsari, Surakarta</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-property.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Swiss-Belhotel Solo</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">45 Jalan Ahmad Yani, Banjarsari, Surakarta</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-property.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Red Planet Solo</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Mangkubumen, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-property.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Sans Hotel Fourth Loft Solo</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div>
+                <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
+                  <div class="d-grid grid-1fr-auto">
+                    <div class="icon-type">
+                      <img src="img/icon/pin-property.svg" alt="icon-location">
+                    </div>
+                    <div class="ml-10">
+                      <div class="text-15 lh-12 fw-500 js-search-option-target">Dinasty Smart Hotel</div>
+                      <div class="text-14 lh-12 text-light-1 mt-5 text-overflow-search">Manahan, Central Java, Indonesia</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+            
           </div>
         </div>
       </div>
@@ -561,8 +794,8 @@
         <div class="backdrop"></div>
         <div class="content-sheet bottom">
           <div class="container">
-            <div class="fw-500 text-16">
-              <i class="icon-close text-14 ml-10"></i>
+            <div class="fw-500 text-16 d-flex align-items-center">
+              <i class="icon-close text-14 mr-10 close__mobilePopup"></i>
               Guests
             </div>
             <hr class="border-bottom" />
@@ -631,7 +864,58 @@
         <div class="backdrop"></div>
         <div class="content-sheet bottom">
           <div class="container">
-            Venue Rating PopUp
+            <div class="fw-500 text-16 d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="icon-close text-14 mr-10 close__mobilePopup"></i>
+                Venue Rating
+              </div>
+              <button class="clear-selection">Clear Selection</button>
+            </div>
+
+            <hr class="border-bottom" />
+
+            <div class="row y-gap-10 justify-between flex-column">
+              <div class="col-auto">
+                <input class="checkbox-booking" type="checkbox" name="booking" id="allVenues-m">
+                <label class="for-checkbox-booking" for="allVenues-m">
+                  <span class="text-14">All Venues</span>
+                </label>
+                
+                <input class="checkbox-booking" type="checkbox" name="booking" id="nonHotel-m">
+                <label class="for-checkbox-booking" for="nonHotel-m">							
+                  <span class="text-14">Non Hotel</span>
+                </label>
+
+                <input class="checkbox-booking" type="checkbox" name="booking" id="star5-m">
+                <label class="for-checkbox-booking" for="star5-m">
+                  <span class="text-14">5 Star</span>
+                </label>
+
+                <input class="checkbox-booking" type="checkbox" name="booking" id="star4-m">
+                <label class="for-checkbox-booking" for="star4-m">
+                  <span class="text-14">4 Star</span>
+                </label>
+
+                <input class="checkbox-booking" type="checkbox" name="booking" id="star3-m">
+                <label class="for-checkbox-booking" for="star3-m">
+                  <span class="text-14">3 Star</span>
+                </label>
+
+                <input class="checkbox-booking" type="checkbox" name="booking" id="star2-m">
+                <label class="for-checkbox-booking" for="star2-m">
+                  <span class="text-14">2 Star</span>
+                </label>
+
+                <input class="checkbox-booking" type="checkbox" name="booking" id="star1-m">
+                <label class="for-checkbox-booking" for="star1-m">
+                  <span class="text-14">1 Star</span>
+                </label>
+              </div>
+            </div>
+            <hr class="border-bottom" />
+
+            <div class="py-10 px-0"><label>Selected:&nbsp;</label><span class="text-gray">Non Hotel, 5 Star, 4 Star, 3 Star</span></div>
+            <a class="filterSubmit button -dark py-15 xol12 rounded-10 text-white close__mobilePopup">Apply</a>
           </div>
         </div>
       </div>
@@ -642,6 +926,58 @@
         <div class="backdrop"></div>
         <div class="content-sheet bottom">
           <div class="container">
+            <div class="fw-500 text-16 d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="icon-close text-14 mr-10 close__mobilePopup"></i>
+                Room Type
+              </div>
+              <button class="clear-selection">Clear Selection</button>
+            </div>
+
+            <hr class="border-bottom" />
+            
+            <div class="col-auto py-20">
+              <input class="checkbox-booking" type="checkbox" name="booking" id="banquet-m">
+              <label class="for-checkbox-booking py-10 height-60" for="banquet-m">
+                <img src="img/type/banquet.png" width="44" alt="">
+                <span class="text-14">Banquet</span>
+              </label>
+              
+              <input class="checkbox-booking" type="checkbox" name="booking" id="classroom-m">
+              <label class="for-checkbox-booking py-10 height-60" for="classroom-m">
+                <img src="img/type/classroom.png" width="40" alt="">						
+                <span class="text-14">Classroom</span>
+              </label>
+
+              <input class="checkbox-booking" type="checkbox" name="booking" id="conference-m">
+              <label class="for-checkbox-booking py-10 height-60" for="conference-m">
+                <img src="img/type/conference.png" width="80" alt="">
+                <span class="text-14">Conference</span>
+              </label>
+
+              <input class="checkbox-booking" type="checkbox" name="booking" id="theater-m">
+              <label class="for-checkbox-booking py-10 height-60" for="theater-m">
+                <img src="img/type/theater.png" width="70" alt="">
+                <span class="text-14">Theater</span>
+              </label>
+
+              <input class="checkbox-booking" type="checkbox" name="booking" id="hollowSquare-m">
+              <label class="for-checkbox-booking py-10 height-60" for="hollowSquare-m">
+                <img src="img/type/hollow.png" width="44" alt="">
+                <span class="text-14">Hollow Square</span>
+              </label>
+
+              <input class="checkbox-booking" type="checkbox" name="booking" id="uShape-m">
+              <label class="for-checkbox-booking py-10 height-60" for="uShape-m">
+                <img src="img/type/u-shape.png" width="47" alt="">
+                <span class="text-14">U-Shape</span>
+              </label>
+            </div>
+
+            <hr class="border-bottom" />
+
+            <div class="py-10 px-0"><label>Selected:&nbsp;</label><span class="text-gray">Banquet, Theater, U-Shape</span></div>
+            <a class="filterSubmit button -dark py-15 xol12 rounded-10 text-white close__mobilePopup">Apply</a>
           </div>
         </div>
       </div>

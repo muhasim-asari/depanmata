@@ -54,8 +54,6 @@
     lineChart();
     parallaxIt();
     liveSearch();
-    // mobileModal();
-    // mobileModalMobile();
   }
 
   function liveSearch() {
@@ -1362,35 +1360,9 @@
   07. Modal Mobile
 ---------------------------------------------------*/
 
-  function mobileModal() {
-    const jsMobilePopUp = document.querySelectorAll(".js-modal-popup");
-    const SheetWrapper = document.querySelector(".sheet-wrapper");
-    const closeButtons = document.querySelectorAll(".close");
-    const backdrop = document.querySelector(".backdrop");
-    const bodyHidden = document.querySelector("body");
-
-    jsMobilePopUp.forEach((jsMobilePopUp) => {
-      jsMobilePopUp.addEventListener("click", () => {
-        SheetWrapper.classList.add("mobilePopup__is-active");
-        bodyHidden.classList.add("html-overflow-hidden");
-      });
-    });
-
-    function closeModal() {
-      SheetWrapper.classList.remove("mobilePopup__is-active");
-      bodyHidden.classList.remove("html-overflow-hidden");
-    }
-
-    closeButtons.forEach((closeButton) => {
-      closeButton.addEventListener("click", closeModal);
-    });
-
-    backdrop.addEventListener("click", closeModal);
-  }
-
   function mobileModalMobile() {
     const jsMobilePopUp = document.querySelectorAll(".js-modal-popup");
-    const closeButtons = document.querySelectorAll(".close");
+    const closeButtons = document.querySelectorAll(".close__mobilePopup");
     const backdrop = document.querySelectorAll(".backdrop");
     const bodyHidden = document.querySelector("body");
   
