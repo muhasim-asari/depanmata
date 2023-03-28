@@ -29,6 +29,7 @@
       RevealAnim.init();
     }, 300);
   }
+  
 
   // Reloads all scripts when navigating through pages
   function initComponents() {
